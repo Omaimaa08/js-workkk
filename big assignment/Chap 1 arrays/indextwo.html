@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Displaying a Message on a Web Page</title>
+  <script>
+    window.onload = function() {
+      var password = prompt("Please enter your password:");
+      var messageContainer = document.getElementById("message-container");
+      
+      if (password === "password123") {
+        messageContainer.textContent = "Hello! Welcome to our website.";
+      } else {
+        messageContainer.textContent = "Error: Please enter a valid password.";
+      }
+    };
+  </script>
+</head>
+<body>
+  <div id="message-container"></div>
+</body>
+</html>

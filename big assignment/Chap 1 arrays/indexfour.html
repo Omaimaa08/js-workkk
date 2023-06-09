@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Displaying Messages in Sequence</title>
+  <script>
+    window.onload = function() {
+      setTimeout(function() {
+        alert("Welcome to JS land");
+        setTimeout(function() {
+          alert("Happy coding");
+          setTimeout(function() {
+            confirm("Prevent this page from additional prompts?");
+          }, 1000);
+        }, 1000);
+      }, 1000);
+    };
+  </script>
+</head>
+<body>
+</body>
+</html>
+
